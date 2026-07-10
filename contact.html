@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="brand"><span class="mark">UVA</span><span class="sub">Car Rent</span></a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html" class="nav-btn">Book now</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section-tight section-dark">
+        <div class="container">
+            <p class="eyebrow">Contact</p>
+            <h1>Talk to a real person</h1>
+            <p>Questions about a booking, a location, or a receipt — reach us however's easiest.</p>
+        </div>
+    </section>
+    <section class="section">
+    <div class="container contact-grid">
+        <form class="form-card" id="contact-form" novalidate>
+        <h3 style="font-size:1.1rem;">Send a message</h3>
+        <div class="form-grid">
+            <div class="field">
+                <label for="c-name">Name</label>
+                <input type="text" id="c-name" required>
+                <span class="error">Enter your name.</span>
+            </div>
+            <div class="field">
+                <label for="c-email">Email</label>
+                <input type="email" id="c-email" required>
+                <span class="error">Enter a valid email.</span>
+            </div>
+            <div class="field full">
+                <label for="c-subject">Subject</label>
+            <select id="c-subject" required>
+                <option value="">Choose a topic</option>
+                <option>Existing booking</option>
+                <option>Billing / receipt</option>
+                <option>Fleet or pricing question</option>
+                <option>Partnerships</option>
+                <option>Something else</option>
+            </select>
+            <span class="error">Choose a topic.</span>
+            </div>
+            <div class="field full">
+                <label for="c-message">Message</label>
+                <textarea id="c-message" required></textarea>
+                <span class="error">Tell us a little about your question.</span>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-top:20px;" id="c-button">Send message</button>
+        <div class="form-msg" id="contact-msg">
+            <div class="toast" id="toast">
+                <span id="toast-text"></span>
+            </div>
+        </div>
+    </form>
+    </section>
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+        <div>
+            <div class="brand" style="margin-bottom:14px;"><span class="mark">UVA</span>CAR RENT</div>
+            <p>Daily car rental across 4 pickup points. Clean cars, honest pricing, no counters.</p>
+        </div>
+        <div>
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="cars.html">Browse fleet</a></li>
+                <li><a href="booking.html">Book a car</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Company</h4>
+            <ul class="footer-cont">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">Careers</a></li>
+                <li><a href="about.html">Our fleet standards</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Get in touch</h4>
+            <ul>
+                <li><a href="about">034 234 2783</a></li>
+                <li><a href="about">hello@uvarent-rentals.lk</a></li>
+                <li><a href="about">No178. Bindunuwewa, Bandarawela</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 UVA Car Rental. All rights reserved.</span>
+            <span>Terms · Privacy · Insurance policy</span>
+        </div>
+    </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

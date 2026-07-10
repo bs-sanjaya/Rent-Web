@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><header class="header">
+        <nav class="nav">
+            <a href="index.html" class="brand"><span class="mark">UVA</span><span class="sub">Car Rent</span></a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html" class="nav-btn">Book now</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+<section class="section-tight section-dark">
+  <div class="container">
+    <p class="eyebrow">Reservation</p>
+    <h1>Lock in your car</h1>
+    <p style="max-width:520px;">Fill in your trip details below. Payment is authorised at pickup — this step just reserves the vehicle.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <form class="form-card" id="booking-form" novalidate>
+      <h3 style="font-size:1.1rem;">Customer details</h3>
+      <div class="form-grid" style="margin-bottom:24px;">
+        <div class="field">
+          <label for="full-name">Full name</label>
+          <input type="text" id="full-name" required>
+          <span class="error">Enter your full name.</span>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" required>
+          <span class="error">Enter a valid email.</span>
+        </div>
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" required>
+          <span class="error">Enter a phone number.</span>
+        </div>
+        <div class="field">
+          <label for="license">Driving licence no.</label>
+          <input type="text" id="license" required>
+          <span class="error">Enter your licence number.</span>
+        </div>
+      </div>
+
+      <h3 style="font-size:1.1rem;">Trip details</h3>
+      <div class="form-grid" style="margin-bottom:24px;">
+        <div class="field full">
+          <label for="car-select">Select vehicle</label>
+          <select id="car-select" required>
+            <option value="">Choose your vehicle</option>
+            <option value="Volkswagen">2018 Volkswagen Atlas</option>
+            <option value="Honda Fit">2020 Honda Fit</option>
+            <option value="Toyota Hiace">Toyota Hiace</option>
+            <option value="t acorolla hamburger">Toyota Corolla Hatchback</option>
+            <option value="92 Toyota Hiace">1991 Toyota Hiace</option>
+            <option value="Chevrolet">1983 Chevrolet S-10 Blazer</option>
+            <option value="Highlander">2006 Toyota Highlander</option>
+            <option value="Decia Sandero Hatchback">2013 Dacia Sandero hatchback</option>
+            <option value="04 Toyota Hiace">2004 Toyota Hiace</option>
+            </select>
+        </div>
+        <div class="field">
+          <label for="pickup-date">Pickup date</label>
+          <input type="date" id="pickup-date" required>
+          <span class="error">Choose a pickup date.</span>
+        </div>
+        <div class="field">
+          <label for="return-date">Return date</label>
+          <input type="date" id="return-date" required>
+          <span class="error">Return date must be after pickup.</span>
+        </div>
+        <div class="field">
+          <label for="pickup-location">Pickup location</label>
+          <select id="pickup-location" required>
+            <option value="">Choose a location</option>
+            <option>Bandarawela</option>
+            <option>Badulla</option>
+            <option>Diyathalawa</option>
+            <option>Haputhale</option>
+          </select>
+          <span class="error">Choose a pickup location.</span>
+        </div>
+        <div class="field">
+          <label for="return-location">Return location</label>
+          <select id="return-location" required>
+            <option value="">Choose a location</option>
+            <option>Bandarawela</option>
+            <option>Badulla</option>
+            <option>Diyathalawa</option>
+            <option>Haputhale</option>
+          </select>
+        </div>
+      </div>
+
+      <h3 style="font-size:1.1rem;">Payment method</h3>
+      <div class="pay-methods" style="margin-bottom:28px;">
+        <label class="pay-option selected">
+          <input type="radio" name="pay"> Credit / debit card
+        </label>
+        <label class="pay-option">
+          <input type="radio" name="pay"> Pay at pickup
+        </label>
+      </div>
+      <div class="con-btn">
+      <button type="submit" class="btn btn-primary btn-block">Confirm reservation</button>
+      <div class="form-msg" id="booking-msg">
+            <div class="toast" id="toast">
+              <span id="toast-text"></span>
+            </div>
+      </div>
+      </div>
+    </form>
+</section>
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+        <div>
+            <div class="brand" style="margin-bottom:14px;"><span class="mark">UVA</span>CAR RENT</div>
+            <p>Daily car rental across 4 pickup points. Clean cars, honest pricing, no counters.</p>
+        </div>
+        <div>
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="cars.html">Browse fleet</a></li>
+                <li><a href="booking.html">Book a car</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Company</h4>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">Careers</a></li>
+                <li><a href="about.html">Our fleet standards</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Get in touch</h4>
+            <ul>
+                <li><a href="about">034 234 2783</a></li>
+                <li><a href="about">hello@uvarent-rentals.lk</a></li>
+                <li><a href="about">No178. Bindunuwewa, Bandarawela</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 UVA Car Rental. All rights reserved.</span>
+            <span>Terms · Privacy · Insurance policy</span>
+        </div>
+    </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
