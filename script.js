@@ -22,9 +22,23 @@ function showToast(message) {
 
     setTimeout(function() {
         toast.classList.remove('show');
-    }, 3000);
+    }, 3500);
 }
 
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  let valid = true;
+
+  this.querySelectorAll('[required]').forEach(function (input) {
+    if (input.value.trim() === '') {
+      input.closest('.field').classList.add('invalid');
+      valid = false;
+    } else {
+      input.closest('.field').classList.remove('invalid');
+    }
+  });
+
+  if (valid) {
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
@@ -32,11 +46,30 @@ if (contactForm) {
         showToast('Thank you! Your message has been sent.');
     });
 }
+}});
 
-const bookingForm = document.getElementById('booking-form');
-if (bookingForm) {
+
+document.getElementById('booking-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  let valid = true;
+
+  this.querySelectorAll('[required]').forEach(function (input) {
+    if (input.value.trim() === '') {
+      input.closest('.field').classList.add('invalid');
+      valid = false;
+    } else {
+      input.closest('.field').classList.remove('invalid');
+    }
+  });
+
+  if (valid) {
+    const bookingForm = document.getElementById('booking-form');
+    if (bookingForm) {
     bookingForm.addEventListener('submit', function(e) {
         e.preventDefault();
         showToast('Booking Successful!. We will contact you soon to confirm your reservation.');
     });
 }
+
+  }
+});
