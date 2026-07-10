@@ -39,15 +39,14 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
   });
 
   if (valid) {
-const contactForm = document.getElementById('contact-form');
-if (contactForm) {
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         showToast('Thank you! Your message has been sent.');
     });
 }
 }});
-
 
 document.getElementById('booking-form').addEventListener('submit', function (e) {
   e.preventDefault();
